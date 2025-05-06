@@ -1,38 +1,33 @@
 .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+   height: 400px;
+  width: 650px; 
+  margin: 0 auto;
+  border: 1px solid #ccc;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+body {
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 2.5;
+}
+.tipcalculator {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset{
+position: absolute;
+left: 30%;
+bottom: -30%;
+width: 200px;
+padding: 10px;
+background-color: rgb(228, 231, 230);
+border: none;
+font-weight: 600;
+font-size: 15px;
+border-radius: 5px;
 }
