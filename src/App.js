@@ -35,12 +35,12 @@ function TipCalculator() {
         How dod your friend like the service?
       </SelectPercentage>
 
-      {bill > 0 && (
+      {bill > 0 && 
         <>
           <Output bill={bill} tip={tip} />
-          <Reset onRest={handleReset} />
+          <Reset onReset={handleReset} />
         </>
-      )}
+      }
     </div>
   );
 }
@@ -81,9 +81,9 @@ function Output({ bill, tip }) {
     </h3>
   );
 }
-function Reset(onRest) {
+function Reset({onReset}) {
   return (
-    <button onClick={onRest} className="reset">
+    <button onClick={onReset} className="reset">
       Reset
     </button>
   );
